@@ -1,4 +1,5 @@
-title:  "github.io blog "
+---
+title:  "github.io blog"
 excerpt: "GitHub Blog setup"
 
 categories:
