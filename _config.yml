@@ -21,11 +21,11 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dayeon Lee"
 description              : "An awesome tech website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://day-lee.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "day-lee/day-lee.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser                   : ""
+logo                     : "assets/images/techdaylee_main.JPG" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Tech Daylee"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -103,14 +103,14 @@ analytics:
 # Site Author
 author:
   name             : "Dayeon Lee"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **Django & Python** developer!"
+  avatar           : "assets/images/techdaylee_main.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am a **Python & Django** developer!"
   location         : "Seoul, South Korea"
-  email            :
+  email            : "iamdayeonlee@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "iamdayeonlee@gmail.com"
+      # url: "iamdayeonlee@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
