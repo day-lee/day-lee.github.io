@@ -98,4 +98,4 @@ unofficial but industry standard
 Don't be too much dependent on features in IDE. Make things easier for 
 everyone to navigate in the project. <br>
 Always assume other developers have their own choice of tools.
-e.g. tamplate tags name: [app_name]_tags.py
+e.g. template tags name: [app_name]_tags.py
