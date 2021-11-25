@@ -1,7 +1,7 @@
 ---
 title:  "[Two Scoops of Django 3.x] 2. Django Environment Setup"
 excerpt: ""
-
+share: false
 categories:
   - Django
 tags:

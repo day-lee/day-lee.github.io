@@ -1,7 +1,7 @@
 ---
 title:  "[Two Scoops of Django 3.x] 1. Coding Style"
 excerpt: ""
-
+share: false
 categories:
   - Django
 tags:
