@@ -17,7 +17,7 @@ last_modified_at: 2021-11-25
 
 ## 1. Default project layout
 
-- when 'django-admin startproject projectname', <br>
+- when ```django-admin startproject projectname```, <br>
 default layout is created, and it's not suitable for most of the real world projects.
 
 ## 2. Recommended Project Layout 
@@ -27,7 +27,7 @@ default layout is created, and it's not suitable for most of the real world proj
 ├── <django_project_root>/
 ```
 ### 1) Top Level: Repository Root
-- Includes README.md, docs/ dir, manage.py, .gitignore, requirements.txt
+- Includes README.md, docs/ directory, manage.py, .gitignore, requirements.txt
 - Makefile: simple deployment tasks and macros
 - files for deployment
 ### 2) Second Level: Django Project Root 
@@ -71,7 +71,7 @@ django_project
 ~/projects/icecreamratings_project/
 ~/.envs/icecreamratings/
 ```
-- no need to upload environment directories to public repos: .gitignore
+- no need to upload environment directories to public repos: Use .gitignore
 - requirements.txt: pip freeze to save list of dependencies 
 
 
