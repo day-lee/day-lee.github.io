@@ -3,8 +3,8 @@ title:  "[Two Scoops of Django 3.x] 5. Settings and Requirements Files"
 excerpt: ""
 share: false
 categories:
-  - [Django] 
-tags:
+  - Django 
+
 toc: true
 toc_sticky: true
 published: true
@@ -12,6 +12,7 @@ published: true
 date: 2021-11-28
 last_modified_at: 2021-11-28
 ---
+
 
 ## 1. Django settings
 
@@ -32,6 +33,7 @@ such as when fixed bugs locally and pushed to production only to find crashing..
 ## 2. Using Multiple Settings Files 
 - settings/ directory instead of settings.py
 - Each settings module requires its own requirements file
+
 ```
 settings/
 ├── __init__.py
@@ -57,6 +59,7 @@ python manage.py runserver --settings=config.settings.local
 
 settings/local.py
 - No need to use if DEBUG, if not DEBUG logic with this. 
+
 ```
 from .base import *
 
@@ -76,6 +79,7 @@ INSTALLED_APPS += ['debug_toolbar', ]
 
 ### 2) Multiple Development Settings 
 - Set your own local settings.py and keep it in version control for teammates
+
 ```
 base.py
 local_daylee.py
@@ -104,8 +108,6 @@ Environment Variables described below won't work on Apache
 ### 2) How to Set Environment Variables Locally 
    
 
-#### on Linux, OSX
-
 - Bash for the shell (pre-Catalina Mac and Linux distributions) can add lines
 at the end of ```.bashrc, .bash_profile, or .profile. ```
 Macs on Catalina and afterwards use ```.zshrc.``` 
@@ -115,7 +117,7 @@ Macs on Catalina and afterwards use ```.zshrc.```
 export SOME_SECRET_KEY=1c3-cr3am-15-yummy
 ```
 
-#### on Windows
+- on Windows
 at the command line
 (cmd.exe)
 - reopen your command prompt for them to go into effect
@@ -146,18 +148,19 @@ at the command line
 > https://www.redhat.com/sysadmin/linux-environment-variables
 
 - Most time, remaining environment variables is fine. But if you want to tightly control it
+
 ``` 
 # on Linux/OSX/Windows
 unset SOME_SECRET_KEY 
  
 # Powershell
 [Environment]::UnsetEnvironmentVariable('SOME_SECRET_KEY', 'User')
- 
 ```
 
 ### 4) How to Set Environment Variables in Production 
 - If using Paas such as Heroku, Python Anywhere, platform.sh etc, follow the specific instructions
 - From Python side, open up a new Python prompt 
+
 ``` 
 # Top of settings/production.py
 import os
@@ -168,7 +171,8 @@ SOME_SECRET_KEY = os.environ['SOME_SECRET_KEY']
 - KeyError comes up if SECRET_KEY is not available, which makes it hard to start a project itself.
 - Code below allows you to have clear error message.
 
-### get_env_variable() Function
+get_env_variable() Function
+
 ``` 
 # settings/base.py
 import os
@@ -192,7 +196,7 @@ SOME_SECRET_KEY = get_env_variable('SOME_SECRET_KEY')
 
 
 
-### Packages 
+- Packages <br>
 [github.com/joke2k/django-environ](github.com/joke2k/django-environ) (Used in Cookiecutter Django)
 [github.com/jazzband/django-configurations](github.com/jazzband/django-configurations)
 
@@ -200,6 +204,7 @@ SOME_SECRET_KEY = get_env_variable('SOME_SECRET_KEY')
 
 ## 4. When You Can’t Use Environment Variables 
 - Using environment variables to store secrets doesn't always work especially for cases below:
+
 ```  
 Nginx-based environment 
 Apache for serving HTTP 
@@ -211,13 +216,14 @@ Apache for serving HTTP
 
 - Placed in project directory at secrets.json
 - Make sure to put it in .gitignore
+
 ```
 {
 "SECRET_KEY": "mthisistheverysecuredkey@h%2pq0"
 }
 ```
 
-### Real Example from my own [notice-board1.11 project](https://github.com/day-lee/notice-board1.11/blob/master/test_board/settings.py) 
+- Example from my own [notice-board1.11 project](https://github.com/day-lee/notice-board1.11/blob/master/test_board/settings.py) 
 
 ```  
 import os, json
@@ -248,6 +254,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 ## 5. Using Multiple Requirements Files 
 ### 1) Installing From Multiple Requirements Files 
 - Segmented Requirements
+
 ```  
  requirements/
 ├── base.txt       -> dependenvies used in all enviroments
@@ -257,6 +264,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 ```
 
 - Command
+
 ``` pip install -r requirements/local.txt ```
 
 ## 6. Handling File Paths in Settings
