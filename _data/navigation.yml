@@ -5,15 +5,17 @@
 #   # - title: "Django"
 #   #   url: /categories/django/    
 
+# sidebar:
+#  - title: "JS"
+#    children:
+#      - title: "Next.js"
+#        url: /categories/next.js/
+
 sidebar:
  - title: "JS"
    children:
      - title: "Next.js"
-       url: /categories/next.js/
-
-# sidebar:
-#  title: "Next.js"
-#  nav: sidebar-sample
+       url: /categories/nextjs/
 
 # sidebar-sample:
 #  - title: "Parent Page A"
