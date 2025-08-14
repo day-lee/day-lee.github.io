@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Next.js"
-    url: /categories/nextjs/
+    url: /categories/nextjs
 #   # - title: "Django"
 #   #   url: /categories/django/    
 
@@ -11,7 +11,7 @@ main:
 #      - title: "Next.js"
 #        url: /categories/next.js/
 
-sidebar:
+# sidebar:
 #  - title: "JS"
 #    children:
 #      - title: "Next.js"

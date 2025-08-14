@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dayeon Lee"
 description              : "A career journal of a Fullstack engineer based in London."
-url                      : "https://day-lee.github.io/"
+url                      : "https://day-lee.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "day-lee/day-lee.github.io"
 teaser                   : ""
