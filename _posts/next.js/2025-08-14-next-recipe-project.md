@@ -2,10 +2,10 @@
 title:  "[Next.js] test"
 excerpt: ""
 share: false
-categories:
-  - Next.js
-tags:
-  - [Blog, Next.js]
+# categories:
+#   - Next.js
+# tags:
+#   - [Blog, Next.js]
 
 toc: true
 toc_sticky: true
