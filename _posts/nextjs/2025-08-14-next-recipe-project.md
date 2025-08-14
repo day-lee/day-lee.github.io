@@ -2,8 +2,8 @@
 title:  "[Next.js] test"
 excerpt: ""
 share: false
-# categories:
-#   - Next.js
+categories:
+  - nextjs
 # tags:
 #   - [Blog, Next.js]
 
