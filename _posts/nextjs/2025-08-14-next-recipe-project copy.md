@@ -3,9 +3,9 @@ title:  "[Next.js] 1. Project Overview"
 excerpt: ""
 share: false
 categories:
-  - Next.js
-tags:
-  - [Blog, Next.js]
+  - nextjs
+# tags:
+#   - [Blog, Next.js]
 
 toc: true
 toc_sticky: true
