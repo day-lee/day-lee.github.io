@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Tech Daylee"
+title                    : "Daylee Tech"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dayeon Lee"
-description              : "An awesome tech website."
+description              : "A career journal of a Fullstack engineer based in London."
 url                      : "https://day-lee.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "day-lee/day-lee.github.io"
 teaser                   : ""
 logo                     : "assets/images/techdaylee_main.JPG" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "Tech Daylee"
+masthead_title           : "Daylee Tech"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "Dayeon Lee"
   avatar           : "assets/images/techdaylee_main.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **Python & Django** developer!"
-  location         : "Seoul, South Korea"
+  bio              : "I am a **Fullstack engineer!"
+  location         : "London, UK"
   email            : "iamdayeonlee@gmail.com"
   links:
     - label: "Email"
