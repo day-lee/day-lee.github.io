@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Dayeon Lee"
   avatar           : "assets/images/techdaylee_main.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **Fullstack engineer!"
+  bio              : "I am a Fullstack engineer! /n JS, React, Next.js, SQL"
   location         : "London, UK"
   email            : "iamdayeonlee@gmail.com"
   links:

@@ -1,15 +1,21 @@
 # main links
 main:
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Django"
-    url: /categories/django/
+  - title: "Next.js"
+    url: /categories/next.js/
+  # - title: "Django"
+  #   url: /categories/django/    
 
-#sidebar:
-#  title: "Sample Title"
+sidebar:
+ - title: "JS"
+   children:
+     - title: "Next.js"
+       url: /categories/next.js/
+
+# sidebar:
+#  title: "Next.js"
 #  nav: sidebar-sample
-#
-#sidebar-sample:
+
+# sidebar-sample:
 #  - title: "Parent Page A"
 #    children:
 #      - title: "Child Page A1"
