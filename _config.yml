@@ -111,7 +111,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "iamdayeonlee@gmail.com"
-    - label: "Website"
+    - label: "Portfolio"
       icon: "fas fa-fw fa-link"
       url: "https://rebrand.ly/linkedindyl"
     - label: "Twitter"
