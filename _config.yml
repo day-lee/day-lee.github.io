@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Dayeon Lee"
   avatar           : "assets/images/techdaylee_main.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Fullstack engineer! - JS, React, Next.js, SQL"
+  bio              : "I am a Fullstack engineer! - TS, React, Next.js, SQL"
   location         : "London, UK"
   email            : "iamdayeonlee@gmail.com"
   links:
@@ -113,7 +113,7 @@ author:
       # url: "iamdayeonlee@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://rebrand.ly/linkedindyl"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
