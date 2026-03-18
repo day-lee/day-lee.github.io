@@ -3,7 +3,7 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push: # trigger 브랜치에 push 발싱할 때 실행
     branches: 
-      - master
+      - main
   workflow_dispatch: # GitHub Actions UI에서 수동으로 워크플로우 실행 가능
 
 jobs:
