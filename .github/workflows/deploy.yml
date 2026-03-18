@@ -1,0 +1,61 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push: # trigger 브랜치에 push 발싱할 때 실행
+    branches: 
+      - master
+  workflow_dispatch: # GitHub Actions UI에서 수동으로 워크플로우 실행 가능
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # 권한 설정: read는 레포지토리 콘텐츠를 읽고, write는 github pages에 배포하고, id-token write 는 OIDC 인증울 위해 필요
+    permissions: 
+      contents: read
+      pages: write
+      id-token: write
+
+ env:
+   BUNDLE_PATH: vendor/bundle 
+
+steps:  # 코드 가져오기 
+  - name: Checkout repository 
+    uses: actions/checkout@v4
+    with:
+      fetch-depth: 0 
+    # Ruby 환경 설정
+  - name: Setup Ruby
+    uese: ruby/setup-ruby@v1
+    with:
+      ruby-version: '3.1'
+      bundler-cache: true 
+    # Jekyll 및 의존성 설치
+  - name: Build Jekyll site
+    env: 
+      JEKYLL_ENV: production # 프로덕션 빌드로 개발 기능 비활성화
+    run: bundle exec jekyll build 
+    # github pages 환경 설정
+  - name: Setup Pages
+    uses: actions/configuration-pages@v3
+    #빌드왼 사이트 아티팩트 업로드 
+  - name: Upload artifact 
+    uses: actions/upload-pages-artifact@v3
+    with:
+      path: './_site'
+
+deploy:
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+  runs-on: ubuntu-latest
+  needs: build
+
+  permission: 
+    contents: read
+    pages: write
+    id-token: write
+ 
+ steps:
+  - name: Deploy to Github Pages
+    id: deployment
+    uses: actions/deploy-pages@v3
